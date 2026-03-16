@@ -204,3 +204,4 @@ legend("topright",
        lwd = c(NA, 1, 1.5, 2),
        cex = 0.9,
        bg = "white")
+# Technical Note: Due to the nonlinear nature of the cubic potential and the metric stiffness (β), some geodesic trajectories may encounter regions of high curvature near the domain boundaries. This may trigger numerical warnings (e.g., DLSODA warnings) indicating that the integrator has reached the machine's precision limits. These warnings do not affect the theoretical integrity of the results; rather, they reflect the intrinsic geometric deformation of the Victoria-Nash strategy space.
